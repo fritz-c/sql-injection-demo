@@ -1,10 +1,10 @@
 <?php require_once 'header.php' ?>
 
-<p>友達のプロフィール名は：<br>
+<p>Your friend's profile name is:<br>
 <?php
-    $dsn = 'mysql:dbname=my_db;host=127.0.0.1';
-    $user = '--omitted--';
-    $password = '--omitted--';
+    $dsn = 'mysql:dbname=my_dbname;host=127.0.0.1';
+    $user = 'my_user';
+    $password = 'my_password';
 
     try {
         $conn = new PDO($dsn, $user, $password);
